@@ -14,6 +14,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ── Scroll-to-top button (declared early, used in onScroll) ─────
+  const scrollTopBtn = document.getElementById('scroll-top-btn');
+  if (scrollTopBtn) {
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
   // ── Sticky nav on scroll ──────────────────────────
   const navbar = document.getElementById('navbar');
   if (navbar) {
@@ -46,14 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── Lucide icons ─────────────────────────────────
   if (window.lucide) lucide.createIcons();
-
-  // ── Scroll-to-top button ─────────────────────────
-  const scrollTopBtn = document.getElementById('scroll-top-btn');
-  if (scrollTopBtn) {
-    scrollTopBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  }
 
   // ── Smooth anchor scroll ─────────────────────────
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
