@@ -1,0 +1,431 @@
+/* ===================================================
+   BASE RESET & GLOBAL
+   =================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0A0E1A;
+  color: #F8FAFC;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Subtle noise texture for premium feel */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ===================================================
+   NAVIGATION
+   =================================================== */
+#navbar {
+  transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-scrolled {
+  background: rgba(10, 14, 26, 0.94) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* ===================================================
+   BUTTONS
+   =================================================== */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2563EB, #1D4ED8);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+  white-space: nowrap;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 40px rgba(37, 99, 235, 0.55);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #F8FAFC;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  text-decoration: none;
+  transition: border-color 0.25s ease, background 0.25s ease;
+  white-space: nowrap;
+}
+
+.btn-ghost:hover {
+  border-color: rgba(37, 99, 235, 0.55);
+  background: rgba(37, 99, 235, 0.08);
+}
+
+/* ===================================================
+   GRADIENT BORDER CARDS
+   =================================================== */
+.gradient-border {
+  position: relative;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #141B35 0%, #0F1528 100%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #2563EB, #06B6D4, #2563EB);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.gradient-border:hover {
+  transform: translateY(-3px);
+  border-color: transparent;
+}
+
+.gradient-border:hover::before {
+  opacity: 1;
+}
+
+/* ===================================================
+   PULSE RING (Hero phone CTA)
+   =================================================== */
+.pulse-ring {
+  position: relative;
+}
+
+.pulse-ring::before,
+.pulse-ring::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 12px;
+  border: 2px solid rgba(37, 99, 235, 0.5);
+  animation: pulse-ring 2.4s ease-out infinite;
+}
+
+.pulse-ring::after {
+  animation-delay: 1.2s;
+}
+
+@keyframes pulse-ring {
+  0%   { transform: scale(1);   opacity: 0.7; }
+  100% { transform: scale(1.12); opacity: 0; }
+}
+
+/* ===================================================
+   WAVEFORM BARS (Hero phone mockup)
+   =================================================== */
+@keyframes bar-pulse {
+  0%, 100% { height: 3px; }
+  50%       { height: var(--bar-max-h, 20px); }
+}
+
+.waveform-bar {
+  width: 3px;
+  min-height: 3px;
+  background: linear-gradient(to top, #2563EB, #06B6D4);
+  border-radius: 2px;
+  animation: bar-pulse 1.3s ease-in-out infinite;
+}
+
+/* ===================================================
+   PHONE MOCKUP (Hero)
+   =================================================== */
+.phone-outer {
+  border-radius: 44px;
+  background: linear-gradient(145deg, #1a2340, #0d1226);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  box-shadow: 0 0 80px rgba(37, 99, 235, 0.25), 0 40px 80px rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+.phone-screen {
+  border-radius: 34px;
+  overflow: hidden;
+  background: #0d1830;
+  aspect-ratio: 9 / 19;
+}
+
+.phone-glow {
+  position: absolute;
+  inset: -30%;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.18) 0%, transparent 70%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ===================================================
+   RANGE SLIDER STYLING
+   =================================================== */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: linear-gradient(
+    to right,
+    #2563EB 0%,
+    #2563EB var(--val, 30%),
+    #1A2444 var(--val, 30%),
+    #1A2444 100%
+  );
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2563EB;
+  box-shadow: 0 0 12px rgba(37, 99, 235, 0.65);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2563EB;
+  box-shadow: 0 0 12px rgba(37, 99, 235, 0.65);
+  border: none;
+  cursor: pointer;
+}
+
+/* ===================================================
+   DISCOVERY TIMELINE
+   =================================================== */
+.timeline-container {
+  position: relative;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 19px;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background: linear-gradient(to bottom, #2563EB, #06B6D4);
+  border-radius: 2px;
+}
+
+@media (min-width: 768px) {
+  .timeline-line {
+    left: 19px;
+  }
+}
+
+/* ===================================================
+   SCORE ARC (Assessment result)
+   =================================================== */
+@keyframes score-fill-anim {
+  from { stroke-dashoffset: 339; }
+  to   { stroke-dashoffset: var(--target, 169); }
+}
+
+.score-arc-animated {
+  stroke-dasharray: 339;
+  stroke-dashoffset: 339;
+}
+
+/* ===================================================
+   ASSESSMENT STEP TRANSITIONS
+   =================================================== */
+.assessment-step {
+  animation: fadeInStep 0.3s ease forwards;
+}
+
+@keyframes fadeInStep {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.assessment-choice.selected {
+  border-color: #2563EB !important;
+  background: rgba(37, 99, 235, 0.12);
+}
+
+/* ===================================================
+   NUMBER COUNT-UP (general utility)
+   =================================================== */
+.counting {
+  transition: none;
+}
+
+/* ===================================================
+   SCROLL-TO-TOP BUTTON
+   =================================================== */
+#scroll-top-btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 100;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563EB, #1D4ED8);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.45);
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+#scroll-top-btn.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+#scroll-top-btn:hover {
+  box-shadow: 0 6px 28px rgba(37, 99, 235, 0.65);
+  transform: translateY(-2px);
+}
+
+/* ===================================================
+   MOBILE MENU
+   =================================================== */
+#mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(10, 14, 26, 0.97);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 16px 24px 24px;
+}
+
+/* ===================================================
+   HERO GRID BACKGROUND
+   =================================================== */
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(37, 99, 235, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.06) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* ===================================================
+   SECTION LABEL
+   =================================================== */
+.section-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #60A5FA;
+  margin-bottom: 12px;
+}
+
+/* ===================================================
+   STAT CARDS — colored top border accent
+   =================================================== */
+.stat-card-red    { border-top: 2px solid #F87171; }
+.stat-card-orange { border-top: 2px solid #FB923C; }
+.stat-card-yellow { border-top: 2px solid #FBBF24; }
+.stat-card-blue   { border-top: 2px solid #60A5FA; }
+
+/* ===================================================
+   RESULT VALUE CARDS
+   =================================================== */
+.result-card {
+  border-radius: 10px;
+  padding: 16px 20px;
+  background: rgba(15, 21, 40, 0.8);
+}
+
+/* ===================================================
+   TESTIMONIAL STARS
+   =================================================== */
+.stars {
+  color: #FBBF24;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+/* ===================================================
+   FOOTER
+   =================================================== */
+footer a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* ===================================================
+   RESPONSIVE UTILITIES
+   =================================================== */
+@media (max-width: 640px) {
+  .btn-primary, .btn-ghost {
+    padding: 13px 22px;
+    font-size: 0.875rem;
+  }
+}
+
+/* ===================================================
+   AOS OVERRIDE — ensure visible on low-motion
+   =================================================== */
+@media (prefers-reduced-motion: reduce) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

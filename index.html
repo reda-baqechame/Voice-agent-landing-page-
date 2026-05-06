@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI employees that answer calls, book appointments, and follow up — 24/7. Built for local businesses. Average 3.1x ROI in 90 days.">
+  <meta property="og:title" content="VoiceAgent AI — Your 24/7 AI Business Team">
+  <meta property="og:description" content="Stop losing revenue to missed calls. Six specialised AI employees, trained on your exact business.">
+  <meta property="og:type" content="website">
+  <title>VoiceAgent AI — Your 24/7 AI Business Team</title>
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              DEFAULT: '#0A0E1A',
+              900: '#070B14',
+              800: '#0F1528',
+              700: '#141B35',
+              600: '#1A2444',
+            },
+            blue: {
+              DEFAULT: '#2563EB',
+              light:   '#3B82F6',
+              glow:    '#60A5FA',
+            },
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            glow:    '0 0 40px rgba(37,99,235,0.4)',
+            'glow-sm':'0 0 20px rgba(37,99,235,0.25)',
+          },
+        },
+      },
+    }
+  </script>
+</head>
+
+<body class="bg-navy text-slate-100 font-sans">
+
+<!-- ====================================================
+     NAVIGATION
+     ==================================================== -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 py-4 px-6 md:px-12">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+    <!-- Logo -->
+    <a href="#" class="flex items-center gap-2 no-underline">
+      <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+      </div>
+      <span class="text-lg font-bold text-white">Voice<span class="text-blue-400">Agent</span></span>
+    </a>
+
+    <!-- Desktop nav -->
+    <div class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-400">
+      <a href="#problem"     class="hover:text-white transition-colors">The Problem</a>
+      <a href="#team"        class="hover:text-white transition-colors">AI Team</a>
+      <a href="#calculator"  class="hover:text-white transition-colors">ROI Calculator</a>
+      <a href="#case-studies" class="hover:text-white transition-colors">Results</a>
+      <a href="#assessment"  class="hover:text-white transition-colors">Get Score</a>
+    </div>
+
+    <a href="#assessment" class="btn-primary hidden md:inline-flex text-sm">Book a Demo</a>
+
+    <!-- Mobile hamburger -->
+    <button id="mobile-menu-btn" class="md:hidden text-white p-1" aria-label="Open menu">
+      <i data-lucide="menu" class="w-6 h-6"></i>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden">
+    <div class="flex flex-col gap-4 mt-4 text-slate-300 text-sm font-medium">
+      <a href="#problem"      class="hover:text-white">The Problem</a>
+      <a href="#team"         class="hover:text-white">AI Team</a>
+      <a href="#calculator"   class="hover:text-white">ROI Calculator</a>
+      <a href="#case-studies" class="hover:text-white">Results</a>
+      <a href="#assessment"   class="hover:text-white">Get Score</a>
+      <a href="#assessment"   class="btn-primary text-center mt-2">Book a Demo</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ====================================================
+     HERO
+     ==================================================== -->
+<section id="hero" class="relative min-h-screen flex items-center pt-20 pb-12 overflow-hidden hero-grid"
+         style="background: radial-gradient(ellipse 100% 80% at 50% 0%, #1A2444 0%, #0A0E1A 65%);">
+
+  <!-- Decorative blobs -->
+  <div class="absolute top-1/4 -left-32 w-96 h-96 rounded-full bg-blue-600/10 blur-3xl pointer-events-none"></div>
+  <div class="absolute bottom-1/4 -right-32 w-80 h-80 rounded-full bg-cyan-500/8 blur-3xl pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center w-full relative z-10">
+
+    <!-- Left: Copy -->
+    <div data-aos="fade-right" data-aos-duration="800">
+
+      <!-- Eyebrow -->
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold mb-6">
+        <span class="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse"></span>
+        AI Employees — Live 24/7
+      </div>
+
+      <!-- H1 -->
+      <h1 class="text-5xl md:text-6xl xl:text-7xl font-black text-white leading-[1.04] mb-6">
+        Your Business Is Losing
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
+          $26,000/Year
+        </span>
+        to Missed Calls
+      </h1>
+
+      <!-- Sub -->
+      <p class="text-lg md:text-xl text-slate-300 mb-8 max-w-lg leading-relaxed">
+        While you're serving customers, calls go to voicemail. Those callers don't leave messages — they call your competitor. We fix that with AI that answers, books, and follows up instantly.
+      </p>
+
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="tel:+18005551234" class="btn-primary pulse-ring gap-2">
+          <i data-lucide="phone" class="w-4 h-4"></i>
+          Call Our AI Receptionist
+        </a>
+        <a href="#how-it-works" class="btn-ghost gap-2">
+          See How It Works
+          <i data-lucide="chevron-down" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <!-- Micro social proof -->
+      <p class="mt-6 text-sm text-slate-500">
+        Trusted by 140+ local businesses &nbsp;·&nbsp; Average 3.1× ROI in 90 days
+      </p>
+    </div>
+
+    <!-- Right: Phone mockup -->
+    <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="200" class="flex justify-center">
+      <div class="relative w-60 mx-auto">
+        <!-- Glow halo -->
+        <div class="phone-glow"></div>
+
+        <!-- Phone frame -->
+        <div class="phone-outer">
+          <div class="phone-screen">
+            <div class="p-5 flex flex-col items-center h-full" style="min-height:440px;">
+
+              <!-- Status bar -->
+              <div class="w-full flex justify-between text-xs text-slate-500 mb-6">
+                <span>9:41</span>
+                <span>●●●</span>
+              </div>
+
+              <!-- Active call header -->
+              <div class="text-center mb-6">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center mx-auto mb-3 shadow-glow">
+                  <i data-lucide="bot" class="w-7 h-7 text-white"></i>
+                </div>
+                <p class="text-white font-bold text-base">Alex</p>
+                <p class="text-slate-400 text-xs">AI Receptionist</p>
+                <div class="flex items-center justify-center gap-1.5 mt-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span class="text-emerald-400 text-xs font-medium">Live Call in Progress</span>
+                </div>
+              </div>
+
+              <!-- Waveform -->
+              <div class="flex items-end justify-center gap-1 h-12 mt-auto mb-4">
+                <span class="waveform-bar" style="--bar-max-h:12px"></span>
+                <span class="waveform-bar" style="--bar-max-h:22px"></span>
+                <span class="waveform-bar" style="--bar-max-h:30px"></span>
+                <span class="waveform-bar" style="--bar-max-h:18px"></span>
+                <span class="waveform-bar" style="--bar-max-h:28px"></span>
+                <span class="waveform-bar" style="--bar-max-h:14px"></span>
+                <span class="waveform-bar" style="--bar-max-h:24px"></span>
+                <span class="waveform-bar" style="--bar-max-h:10px"></span>
+                <span class="waveform-bar" style="--bar-max-h:32px"></span>
+                <span class="waveform-bar" style="--bar-max-h:20px"></span>
+                <span class="waveform-bar" style="--bar-max-h:16px"></span>
+                <span class="waveform-bar" style="--bar-max-h:26px"></span>
+              </div>
+
+              <!-- Timer -->
+              <p id="call-timer" class="text-slate-300 font-mono text-sm mb-4">0:47</p>
+
+              <!-- Call action icons -->
+              <div class="flex gap-6 pb-3">
+                <div class="w-10 h-10 rounded-full bg-navy-600 flex items-center justify-center">
+                  <i data-lucide="mic-off" class="w-4 h-4 text-slate-400"></i>
+                </div>
+                <div class="w-10 h-10 rounded-full bg-red-500/20 flex items-center justify-center">
+                  <i data-lucide="phone-off" class="w-4 h-4 text-red-400"></i>
+                </div>
+                <div class="w-10 h-10 rounded-full bg-navy-600 flex items-center justify-center">
+                  <i data-lucide="volume-2" class="w-4 h-4 text-slate-400"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-slate-600">
+    <i data-lucide="chevrons-down" class="w-6 h-6"></i>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     THE PROBLEM
+     ==================================================== -->
+<section id="problem" class="py-24 px-6 md:px-12" style="background:#0F1528;">
+  <div class="max-w-7xl mx-auto">
+
+    <div data-aos="fade-up" class="text-center mb-14">
+      <span class="section-label">The Reality</span>
+      <h2 class="text-3xl md:text-5xl font-bold text-white">
+        Every Missed Call Is a <span class="text-red-400">Revenue Leak</span>
+      </h2>
+      <p class="text-slate-400 mt-4 max-w-2xl mx-auto text-lg">
+        Local businesses lose hundreds of thousands to problems that AI solves in seconds. Here's what the data says.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+      <!-- Stat 1 -->
+      <div class="gradient-border p-6 text-center stat-card-red" data-aos="fade-up" data-aos-delay="0">
+        <p class="text-6xl font-black text-red-400 mb-2" data-count="62" data-suffix="%">0%</p>
+        <p class="text-white font-semibold mb-2">Never Call Back</p>
+        <p class="text-slate-400 text-sm leading-relaxed">of callers who hit voicemail never try again — they move on to your competitor</p>
+      </div>
+
+      <!-- Stat 2 -->
+      <div class="gradient-border p-6 text-center stat-card-orange" data-aos="fade-up" data-aos-delay="100">
+        <p class="text-6xl font-black text-orange-400 mb-2" data-count="500" data-prefix="$" data-suffix="+">$0</p>
+        <p class="text-white font-semibold mb-2">Per Missed Call</p>
+        <p class="text-slate-400 text-sm leading-relaxed">average lifetime value lost each time a lead goes unanswered in service industries</p>
+      </div>
+
+      <!-- Stat 3 -->
+      <div class="gradient-border p-6 text-center stat-card-yellow" data-aos="fade-up" data-aos-delay="200">
+        <p class="text-6xl font-black text-yellow-400 mb-2" data-count="23" data-suffix="%">0%</p>
+        <p class="text-white font-semibold mb-2">Staff Time on Calls</p>
+        <p class="text-slate-400 text-sm leading-relaxed">of your team's working hours consumed by scheduling, follow-up, and repetitive questions</p>
+      </div>
+
+      <!-- Stat 4 -->
+      <div class="gradient-border p-6 text-center stat-card-blue" data-aos="fade-up" data-aos-delay="300">
+        <p class="text-6xl font-black text-blue-400 mb-2">5 Min</p>
+        <p class="text-white font-semibold mb-2">Response Window</p>
+        <p class="text-slate-400 text-sm leading-relaxed">leads contacted within 5 minutes are <strong class="text-white">21× more likely</strong> to convert vs. an hour later</p>
+      </div>
+
+    </div>
+
+    <!-- Bottom callout -->
+    <div data-aos="fade-up" data-aos-delay="400" class="mt-10 rounded-2xl p-6 md:p-8 text-center"
+         style="background:linear-gradient(135deg,rgba(37,99,235,0.12),rgba(6,182,212,0.08));border:1px solid rgba(37,99,235,0.2);">
+      <p class="text-lg md:text-xl text-slate-200 font-medium">
+        A receptionist working 20 hrs/week at $25/hr costs you <span class="text-white font-bold">$26,000/year.</span><br>
+        AI handles the same work for a fraction of that — and never sleeps.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ====================================================
+     MEET YOUR AI TEAM
+     ==================================================== -->
+<section id="team" class="py-24 px-6 md:px-12">
+  <div class="max-w-7xl mx-auto">
+
+    <div data-aos="fade-up" class="text-center mb-14">
+      <span class="section-label">Your New Hires</span>
+      <h2 class="text-3xl md:text-5xl font-bold text-white">
+        Meet Your AI Team —<br class="hidden md:block"> <span class="text-blue-400">Always On. Never Off.</span>
+      </h2>
+      <p class="text-slate-400 mt-4 max-w-2xl mx-auto text-lg">
+        Six specialised AI employees, each trained on your exact business. No sick days, no overtime, no training ramp-up.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <!-- Alex -->
+      <div class="gradient-border p-6 flex flex-col gap-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
+          <i data-lucide="phone-incoming" class="w-5 h-5 text-white"></i>
+        </div>
+        <div>
+          <h3 class="text-white font-bold text-lg">Alex</h3>
+          <p class="text-blue-400 text-sm font-medium">AI Receptionist</p>
+        </div>
+        <p class="text-slate-300 text-sm leading-relaxed">Answers every call in under 2 rings, 24/7, and books appointments instantly — no hold music, no voicemail.</p>
+        <div class="mt-auto flex items-center gap-2 text-xs text-emerald-400 font-medium">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          Active 24/7
+        </div>
+      </div>
+
+      <!-- Sam -->
+      <div class="gradient-border p-6 flex flex-col gap-4" data-aos="fade-up" data-aos-delay="80">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-cyan-500 to-cyan-700 flex items-center justify-center">
+          <i data-lucide="message-circle" class="w-5 h-5 text-white"></i>
+        </div>
+        <div>
+          <h3 class="text-white font-bold text-lg">Sam</h3>
+          <p class="text-cyan-400 text-sm font-medium">AI Follow-up Specialist</p>
+        </div>
+        <p class="text-slate-300 text-sm leading-relaxed">Sends personalised texts and emails within 60 seconds of a missed interaction — so no lead ever goes cold.</p>
+        <div class="mt-auto flex items-center gap-2 text-xs text-emerald-400 font-medium">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          Active 24/7
+        </div>
+      </div>
+
+      <!-- Riley -->
+      <div class="gradient-border p-6 flex flex-col gap-4" data-aos="fade-up" data-aos-delay="160">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-violet-500 to-violet-700 flex items-center justify-center">
+          <i data-lucide="clipboard-list" class="w-5 h-5 text-white"></i>
+        </div>
+        <div>
+          <h3 class="text-white font-bold text-lg">Riley</h3>
+          <p class="text-violet-400 text-sm font-medium">AI Intake Agent</p>
+        </div>
+        <p class="text-slate-300 text-sm leading-relaxed">Collects full customer info, qualifies leads, and routes hot prospects to you immediately — so you only talk to ready buyers.</p>
+        <div class="mt-auto flex items-center gap-2 text-xs text-emerald-400 font-medium">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          Active 24/7
+        </div>
+      </div>
+
+      <!-- Jordan -->
+      <div class="gradient-border p-6 flex flex-col gap-4" data-aos="fade-up" data-aos-delay="240">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center">
+          <i data-lucide="calendar-check" class="w-5 h-5 text-white"></i>
+        </div>
+        <div>
+          <h3 class="text-white font-bold text-lg">Jordan</h3>
+          <p class="text-emerald-400 text-sm font-medium">AI Scheduling Coordinator</p>
+        </div>
+        <p class="text-slate-300 text-sm leading-relaxed">Manages your calendar, sends reminders, and reduces no-shows by up to 67% — your schedule fills itself.</p>
+        <div class="mt-auto flex items-center gap-2 text-xs text-emerald-400 font-medium">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          Active 24/7
+        </div>
+      </div>
+
+      <!-- Morgan -->
+      <div class="gradient-border p-6 flex flex-col gap-4" data-aos="fade-up" data-aos-delay="320">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center">
+          <i data-lucide="star" class="w-5 h-5 text-white"></i>
+        </div>
+        <div>
+          <h3 class="text-white font-bold text-lg">Morgan</h3>
+          <p class="text-amber-400 text-sm font-medium">AI Review Requester</p>
+        </div>
+        <p class="text-slate-300 text-sm leading-relaxed">Follows up post-service to collect 5-star Google reviews on autopilot — hands-free reputation growth that compounds.</p>
+        <div class="mt-auto flex items-center gap-2 text-xs text-emerald-400 font-medium">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          Active 24/7
+        </div>
+      </div>
+
+      <!-- Taylor -->
+      <div class="gradient-border p-6 flex flex-col gap-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-rose-500 to-rose-700 flex items-center justify-center">
+          <i data-lucide="refresh-cw" class="w-5 h-5 text-white"></i>
+        </div>
+        <div>
+          <h3 class="text-white font-bold text-lg">Taylor</h3>
+          <p class="text-rose-400 text-sm font-medium">AI Reactivation Agent</p>
+        </div>
+        <p class="text-slate-300 text-sm leading-relaxed">Re-engages cold leads and past customers automatically — recovering revenue you'd already written off.</p>
+        <div class="mt-auto flex items-center gap-2 text-xs text-emerald-400 font-medium">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          Active 24/7
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     ROI CALCULATOR
+     ==================================================== -->
+<section id="calculator" class="py-24 px-6 md:px-12" style="background:#0F1528;">
+  <div class="max-w-5xl mx-auto">
+
+    <div data-aos="fade-up" class="text-center mb-14">
+      <span class="section-label">Your Numbers</span>
+      <h2 class="text-3xl md:text-5xl font-bold text-white">
+        See Exactly What You're <span class="text-blue-400">Leaving on the Table</span>
+      </h2>
+      <p class="text-slate-400 mt-4 max-w-xl mx-auto">
+        Enter your real numbers. The ROI comes from your data — not ours.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 items-start">
+
+      <!-- Inputs -->
+      <div class="gradient-border p-7 md:p-8" data-aos="fade-right">
+        <h3 class="text-white font-semibold text-lg mb-6">Your Business Info</h3>
+
+        <!-- Monthly calls -->
+        <div class="mb-7">
+          <div class="flex justify-between mb-2">
+            <label class="text-slate-300 text-sm font-medium">Monthly Call Volume</label>
+            <span id="calls-display" class="text-blue-400 text-sm font-semibold">200 calls</span>
+          </div>
+          <input type="range" id="monthly-calls" min="20" max="1000" value="200" step="10">
+          <div class="flex justify-between text-xs text-slate-600 mt-1"><span>20</span><span>1,000</span></div>
+        </div>
+
+        <!-- Avg customer value -->
+        <div class="mb-7">
+          <div class="flex justify-between mb-2">
+            <label class="text-slate-300 text-sm font-medium">Average Customer Value</label>
+            <span id="value-display" class="text-blue-400 text-sm font-semibold">$350</span>
+          </div>
+          <input type="range" id="avg-value" min="50" max="5000" value="350" step="25">
+          <div class="flex justify-between text-xs text-slate-600 mt-1"><span>$50</span><span>$5,000</span></div>
+        </div>
+
+        <!-- Missed call % -->
+        <div class="mb-7">
+          <div class="flex justify-between mb-2">
+            <label class="text-slate-300 text-sm font-medium">Calls Currently Missed</label>
+            <span id="missed-display" class="text-blue-400 text-sm font-semibold">25%</span>
+          </div>
+          <input type="range" id="missed-pct" min="5" max="80" value="25" step="1">
+          <div class="flex justify-between text-xs text-slate-600 mt-1"><span>5%</span><span>80%</span></div>
+        </div>
+
+        <!-- Staff wage -->
+        <div class="mb-8">
+          <div class="flex justify-between mb-2">
+            <label class="text-slate-300 text-sm font-medium">Avg Staff Hourly Wage</label>
+            <span id="wage-display" class="text-blue-400 text-sm font-semibold">$18/hr</span>
+          </div>
+          <input type="range" id="staff-wage" min="10" max="60" value="18" step="1">
+          <div class="flex justify-between text-xs text-slate-600 mt-1"><span>$10</span><span>$60</span></div>
+        </div>
+
+        <a href="#assessment" class="btn-primary w-full">
+          Get My Personalised Report →
+        </a>
+      </div>
+
+      <!-- Live results -->
+      <div class="gradient-border p-7 md:p-8" data-aos="fade-left">
+        <h3 class="text-white font-semibold text-lg mb-6">Your Revenue Opportunity</h3>
+
+        <div class="space-y-4">
+
+          <div class="result-card border border-red-500/20">
+            <p class="text-slate-400 text-xs font-medium mb-1">ANNUAL REVENUE CURRENTLY LOST</p>
+            <p id="result-lost" class="text-3xl font-black text-red-400" data-current="0">$21,840</p>
+          </div>
+
+          <div class="result-card border border-emerald-500/20">
+            <p class="text-slate-400 text-xs font-medium mb-1">REVENUE RECOVERABLE WITH AI</p>
+            <p id="result-recovered" class="text-3xl font-black text-emerald-400" data-current="0">$17,472</p>
+            <p class="text-slate-600 text-xs mt-1">Assumes 80% conversion recovery rate with AI</p>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <div class="result-card border border-blue-500/20">
+              <p class="text-slate-400 text-xs font-medium mb-1">HOURS SAVED / YEAR</p>
+              <p id="result-hours" class="text-2xl font-black text-blue-400" data-current="0">720 hrs</p>
+            </div>
+            <div class="result-card border border-purple-500/20">
+              <p class="text-slate-400 text-xs font-medium mb-1">STAFF COST SAVED</p>
+              <p id="result-savings" class="text-2xl font-black text-purple-400" data-current="0">$12,960</p>
+            </div>
+          </div>
+
+          <!-- ROI highlight -->
+          <div class="rounded-xl p-5 text-center"
+               style="background:linear-gradient(135deg,rgba(37,99,235,0.18),rgba(6,182,212,0.12));border:1px solid rgba(37,99,235,0.3);">
+            <p class="text-slate-300 text-sm mb-1">Your Projected Annual ROI</p>
+            <p id="result-roi" class="text-6xl font-black text-white">8.5x</p>
+            <p class="text-slate-500 text-xs mt-1">vs. AI monthly subscription cost</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     HOW IT WORKS
+     ==================================================== -->
+<section id="how-it-works" class="py-24 px-6 md:px-12">
+  <div class="max-w-5xl mx-auto">
+
+    <div data-aos="fade-up" class="text-center mb-14">
+      <span class="section-label">The Process</span>
+      <h2 class="text-3xl md:text-5xl font-bold text-white">
+        Up and Running in <span class="text-blue-400">72 Hours</span>
+      </h2>
+      <p class="text-slate-400 mt-4 max-w-xl mx-auto">
+        From your first call with us to a fully live AI team — in three steps.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="gradient-border p-8 text-center relative" data-aos="fade-up" data-aos-delay="0">
+        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center mx-auto mb-5 text-white font-black text-lg">1</div>
+        <h3 class="text-white font-bold text-xl mb-3">We Learn Your Business</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">2.5 hours of deep-dive into your brand voice, services, pricing, FAQs, and customer journey. No shortcuts — this is what makes your AI sound like <em>you</em>.</p>
+        <!-- Connector -->
+        <div class="hidden md:flex absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 items-center justify-center text-blue-400 text-lg font-bold z-10">›</div>
+      </div>
+
+      <div class="gradient-border p-8 text-center relative" data-aos="fade-up" data-aos-delay="150">
+        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center mx-auto mb-5 text-white font-black text-lg">2</div>
+        <h3 class="text-white font-bold text-xl mb-3">We Train Your AI Team</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Each AI employee is trained on your exact business data. We run 100+ quality assurance test calls before a single real call is answered.</p>
+        <div class="hidden md:flex absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 items-center justify-center text-blue-400 text-lg font-bold z-10">›</div>
+      </div>
+
+      <div class="gradient-border p-8 text-center" data-aos="fade-up" data-aos-delay="300">
+        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center mx-auto mb-5 text-white font-black text-lg">3</div>
+        <h3 class="text-white font-bold text-xl mb-3">You Grow on Autopilot</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Your AI team handles calls, bookings, and follow-ups around the clock. You get weekly performance reports and we continuously optimise.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     CASE STUDIES
+     ==================================================== -->
+<section id="case-studies" class="py-24 px-6 md:px-12" style="background:#0F1528;">
+  <div class="max-w-7xl mx-auto">
+
+    <div data-aos="fade-up" class="text-center mb-14">
+      <span class="section-label">Proven Results</span>
+      <h2 class="text-3xl md:text-5xl font-bold text-white">
+        Real Businesses. <span class="text-blue-400">Real Numbers.</span>
+      </h2>
+      <p class="text-slate-400 mt-4 max-w-xl mx-auto">
+        These aren't projections. These are clients who used to miss calls and now close more deals.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-5">
+
+      <!-- HVAC -->
+      <div class="gradient-border p-7 flex flex-col" data-aos="fade-up" data-aos-delay="0">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-lg bg-orange-500/15 flex items-center justify-center shrink-0">
+            <i data-lucide="flame" class="w-5 h-5 text-orange-400"></i>
+          </div>
+          <div>
+            <p class="text-white font-semibold text-sm">Patterson HVAC</p>
+            <p class="text-slate-500 text-xs">Dallas, TX &nbsp;·&nbsp; 12-person team</p>
+          </div>
+        </div>
+
+        <div class="mb-5">
+          <p class="text-5xl font-black text-emerald-400">$142K</p>
+          <p class="text-slate-400 text-sm mt-1">in additional booked jobs (year 1)</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+          <div>
+            <p class="text-2xl font-bold text-blue-400">18 hrs</p>
+            <p class="text-slate-500 text-xs">saved per week</p>
+          </div>
+          <div>
+            <p class="text-2xl font-bold text-purple-400">3.8×</p>
+            <p class="text-slate-500 text-xs">ROI in 90 days</p>
+          </div>
+        </div>
+
+        <p class="text-slate-300 text-sm italic leading-relaxed mt-auto">"We were losing jobs every weekend. Now Alex handles every call and I see the booking confirmation in my email within minutes."</p>
+        <p class="text-slate-500 text-xs mt-2">— Mike P., Owner</p>
+      </div>
+
+      <!-- Dental -->
+      <div class="gradient-border p-7 flex flex-col" style="border-color:rgba(37,99,235,0.25);" data-aos="fade-up" data-aos-delay="100">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-lg bg-blue-500/15 flex items-center justify-center shrink-0">
+            <i data-lucide="smile" class="w-5 h-5 text-blue-400"></i>
+          </div>
+          <div>
+            <p class="text-white font-semibold text-sm">Lakewood Family Dental</p>
+            <p class="text-slate-500 text-xs">Denver, CO &nbsp;·&nbsp; Solo practitioner</p>
+          </div>
+        </div>
+
+        <div class="mb-5">
+          <p class="text-5xl font-black text-emerald-400">340</p>
+          <p class="text-slate-400 text-sm mt-1">AI-booked appointments in month 1</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+          <div>
+            <p class="text-2xl font-bold text-blue-400">67%</p>
+            <p class="text-slate-500 text-xs">fewer no-shows</p>
+          </div>
+          <div>
+            <p class="text-2xl font-bold text-purple-400">$89K</p>
+            <p class="text-slate-500 text-xs">added revenue yr 1</p>
+          </div>
+        </div>
+
+        <p class="text-slate-300 text-sm italic leading-relaxed mt-auto">"Jordan fills my chair. I used to arrive Monday to 14 voicemails. Now my schedule is packed before I walk in."</p>
+        <p class="text-slate-500 text-xs mt-2">— Dr. Lisa M., DDS</p>
+      </div>
+
+      <!-- Auto Repair -->
+      <div class="gradient-border p-7 flex flex-col" data-aos="fade-up" data-aos-delay="200">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-lg bg-slate-500/15 flex items-center justify-center shrink-0">
+            <i data-lucide="wrench" class="w-5 h-5 text-slate-400"></i>
+          </div>
+          <div>
+            <p class="text-white font-semibold text-sm">Metro Auto Works</p>
+            <p class="text-slate-500 text-xs">Phoenix, AZ &nbsp;·&nbsp; 8 bays</p>
+          </div>
+        </div>
+
+        <div class="mb-5">
+          <p class="text-5xl font-black text-emerald-400">91%</p>
+          <p class="text-slate-400 text-sm mt-1">reduction in missed calls</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+          <div>
+            <p class="text-2xl font-bold text-blue-400">3.2×</p>
+            <p class="text-slate-500 text-xs">ROI in 60 days</p>
+          </div>
+          <div>
+            <p class="text-2xl font-bold text-purple-400">+44%</p>
+            <p class="text-slate-500 text-xs">monthly revenue</p>
+          </div>
+        </div>
+
+        <p class="text-slate-300 text-sm italic leading-relaxed mt-auto">"We thought we were answering most calls. The data was brutal. VoiceAgent fixed it in a week and hasn't missed one since."</p>
+        <p class="text-slate-500 text-xs mt-2">— Carlos R., Shop Manager</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     TESTIMONIALS
+     ==================================================== -->
+<section id="testimonials" class="py-24 px-6 md:px-12">
+  <div class="max-w-7xl mx-auto">
+
+    <div data-aos="fade-up" class="text-center mb-14">
+      <span class="section-label">Client Stories</span>
+      <h2 class="text-3xl md:text-5xl font-bold text-white">What Business Owners Say</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+      <!-- T1 -->
+      <div class="gradient-border p-6 flex flex-col gap-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="stars">★★★★★</div>
+        <p class="text-slate-300 text-sm leading-relaxed italic flex-1">"Sam follows up with every single lead automatically. We close 40% more jobs now and I haven't hired anyone extra."</p>
+        <div class="flex items-center gap-3 pt-3 border-t border-white/5">
+          <div class="w-9 h-9 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-white text-xs font-bold shrink-0">JK</div>
+          <div>
+            <p class="text-white text-sm font-semibold">Jason K.</p>
+            <p class="text-slate-500 text-xs">Precision Plumbing, Atlanta GA</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- T2 -->
+      <div class="gradient-border p-6 flex flex-col gap-4" data-aos="fade-up" data-aos-delay="80">
+        <div class="stars">★★★★★</div>
+        <p class="text-slate-300 text-sm leading-relaxed italic flex-1">"Riley screens every caller. My front desk now focuses on in-clinic clients. Revenue up 28% in three months — I wish I'd done this sooner."</p>
+        <div class="flex items-center gap-3 pt-3 border-t border-white/5">
+          <div class="w-9 h-9 rounded-full bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center text-white text-xs font-bold shrink-0">SB</div>
+          <div>
+            <p class="text-white text-sm font-semibold">Sarah B.</p>
+            <p class="text-slate-500 text-xs">Bloom Aesthetics Spa, Austin TX</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- T3 -->
+      <div class="gradient-border p-6 flex flex-col gap-4" data-aos="fade-up" data-aos-delay="160">
+        <div class="stars">★★★★★</div>
+        <p class="text-slate-300 text-sm leading-relaxed italic flex-1">"Morgan got us 47 new Google reviews in six weeks. We went from 3.9 to 4.7 stars. The phones ring more now. It just works."</p>
+        <div class="flex items-center gap-3 pt-3 border-t border-white/5">
+          <div class="w-9 h-9 rounded-full bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center text-white text-xs font-bold shrink-0">TW</div>
+          <div>
+            <p class="text-white text-sm font-semibold">Tom W.</p>
+            <p class="text-slate-500 text-xs">Westside Landscaping, Denver CO</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- T4 -->
+      <div class="gradient-border p-6 flex flex-col gap-4" data-aos="fade-up" data-aos-delay="240">
+        <div class="stars">★★★★★</div>
+        <p class="text-slate-300 text-sm leading-relaxed italic flex-1">"Bookings, reminders, follow-ups — all done. No-show rate dropped from 22% to 6% in 45 days. My front desk finally has breathing room."</p>
+        <div class="flex items-center gap-3 pt-3 border-t border-white/5">
+          <div class="w-9 h-9 rounded-full bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white text-xs font-bold shrink-0">RD</div>
+          <div>
+            <p class="text-white text-sm font-semibold">Rachel D.</p>
+            <p class="text-slate-500 text-xs">Family First Chiropractic, Phoenix AZ</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     DISCOVERY PROCESS
+     ==================================================== -->
+<section id="discovery" class="py-24 px-6 md:px-12" style="background:#0F1528;">
+  <div class="max-w-3xl mx-auto">
+
+    <div data-aos="fade-up" class="text-center mb-6">
+      <span class="section-label">Our Process</span>
+      <h2 class="text-3xl md:text-5xl font-bold text-white">
+        We Don't Deploy Until It's <span class="text-blue-400">Perfect</span>
+      </h2>
+      <p class="text-slate-400 mt-4 text-lg">
+        90% of AI deployments fail in 60 days because agencies skip this. We don't.
+      </p>
+    </div>
+
+    <!-- Tagline -->
+    <div data-aos="fade-up" class="my-8 text-center">
+      <p class="text-slate-300 font-semibold text-lg italic">"2.5 hours of discovery before we ever touch deployment."</p>
+    </div>
+
+    <!-- Timeline -->
+    <div class="timeline-container mt-10 relative" data-aos="fade-up">
+      <div class="timeline-line"></div>
+
+      <div class="space-y-6 pl-12">
+
+        <div class="gradient-border p-5" data-aos="fade-left" data-aos-delay="0">
+          <div class="absolute -left-0 w-9 h-9 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-white text-sm font-bold" style="margin-left:-0.25rem">1</div>
+          <h3 class="text-white font-semibold mb-1">Business Identity &amp; Brand Voice</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">We capture how your business speaks — tone, terminology, and values. Your AI sounds like your best employee, not a generic bot.</p>
+        </div>
+
+        <div class="gradient-border p-5" data-aos="fade-left" data-aos-delay="80">
+          <div class="absolute -left-0 w-9 h-9 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-white text-sm font-bold" style="margin-left:-0.25rem">2</div>
+          <h3 class="text-white font-semibold mb-1">Services, Pricing &amp; FAQ Library</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">We document every service tier, price range, and common question — so your AI handles objections perfectly every time.</p>
+        </div>
+
+        <div class="gradient-border p-5" data-aos="fade-left" data-aos-delay="160">
+          <div class="absolute -left-0 w-9 h-9 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-white text-sm font-bold" style="margin-left:-0.25rem">3</div>
+          <h3 class="text-white font-semibold mb-1">Calendar Logic &amp; Booking Rules</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Time slots, buffer rules, staff assignments, and priority booking logic — all configured before go-live so nothing breaks in production.</p>
+        </div>
+
+        <div class="gradient-border p-5" data-aos="fade-left" data-aos-delay="240">
+          <div class="absolute -left-0 w-9 h-9 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-white text-sm font-bold" style="margin-left:-0.25rem">4</div>
+          <h3 class="text-white font-semibold mb-1">No-Show &amp; Follow-up Automation</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Reminder sequences, cancellation handling, and win-back flows — all mapped to your exact workflow and timing preferences.</p>
+        </div>
+
+        <div class="gradient-border p-5" data-aos="fade-left" data-aos-delay="320">
+          <div class="absolute -left-0 w-9 h-9 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-white text-sm font-bold" style="margin-left:-0.25rem">5</div>
+          <h3 class="text-white font-semibold mb-1">Escalation &amp; Handoff Protocols</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Your AI knows exactly when to escalate to a human and how to do it gracefully — no frustrated callers, no dropped balls.</p>
+        </div>
+
+        <div class="gradient-border p-5" data-aos="fade-left" data-aos-delay="400">
+          <div class="absolute -left-0 w-9 h-9 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-white text-sm font-bold" style="margin-left:-0.25rem">6</div>
+          <h3 class="text-white font-semibold mb-1">AI Training &amp; Quality Assurance</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">100+ test calls, edge case reviews, and performance benchmarking before your AI ever touches a real customer call.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Outcome banner -->
+    <div data-aos="fade-up" class="mt-12 rounded-2xl p-7 text-center"
+         style="background:linear-gradient(135deg,rgba(37,99,235,0.14),rgba(6,182,212,0.08));border:1px solid rgba(37,99,235,0.22);">
+      <p class="text-white font-bold text-xl mb-2">When you invest 2.5 hours up front, three things happen:</p>
+      <div class="grid md:grid-cols-3 gap-4 mt-5 text-left">
+        <div class="flex gap-3 items-start">
+          <div class="w-7 h-7 rounded-full bg-emerald-500/20 flex items-center justify-center shrink-0 mt-0.5">
+            <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i>
+          </div>
+          <p class="text-slate-300 text-sm">The AI actually works — it sounds like <em>your</em> business, not a generic bot.</p>
+        </div>
+        <div class="flex gap-3 items-start">
+          <div class="w-7 h-7 rounded-full bg-blue-500/20 flex items-center justify-center shrink-0 mt-0.5">
+            <i data-lucide="check" class="w-3.5 h-3.5 text-blue-400"></i>
+          </div>
+          <p class="text-slate-300 text-sm">You can justify significantly higher prices for a genuinely customised solution.</p>
+        </div>
+        <div class="flex gap-3 items-start">
+          <div class="w-7 h-7 rounded-full bg-purple-500/20 flex items-center justify-center shrink-0 mt-0.5">
+            <i data-lucide="check" class="w-3.5 h-3.5 text-purple-400"></i>
+          </div>
+          <p class="text-slate-300 text-sm">Clients can't leave. All that context and integration is locked in — switching costs become real.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ====================================================
+     AI READINESS ASSESSMENT
+     ==================================================== -->
+<section id="assessment" class="py-24 px-6 md:px-12">
+  <div class="max-w-2xl mx-auto">
+
+    <div data-aos="fade-up" class="text-center mb-12">
+      <span class="section-label">Free Assessment</span>
+      <h2 class="text-3xl md:text-5xl font-bold text-white">
+        Get Your AI Readiness Score
+      </h2>
+      <p class="text-slate-400 mt-4 text-lg">
+        5 questions. 60 seconds. A personalised recommendation for your business — free.
+      </p>
+    </div>
+
+    <div id="assessment-container" class="gradient-border p-7 md:p-9" data-aos="fade-up">
+
+      <!-- Progress bar -->
+      <div class="mb-8">
+        <div class="flex justify-between text-xs text-slate-500 mb-2">
+          <span id="step-label">Step 1 of 5</span>
+          <span id="step-pct">20%</span>
+        </div>
+        <div class="h-1.5 rounded-full overflow-hidden" style="background:#1A2444;">
+          <div id="progress-bar" class="h-full rounded-full transition-all duration-500"
+               style="width:20%;background:linear-gradient(90deg,#2563EB,#06B6D4);"></div>
+        </div>
+      </div>
+
+      <!-- Step 1: Industry -->
+      <div id="step-1" class="assessment-step">
+        <h3 class="text-white font-semibold text-xl mb-6">What industry are you in?</h3>
+        <select id="q1" class="w-full rounded-xl px-4 py-3 text-white outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                style="background:#141B35;border:1px solid rgba(255,255,255,0.1);">
+          <option value="">Select your industry…</option>
+          <option value="hvac">HVAC / Plumbing / Electrical</option>
+          <option value="dental">Dental / Medical / Chiropractic</option>
+          <option value="auto">Auto Repair / Dealership</option>
+          <option value="legal">Legal Services</option>
+          <option value="spa">Spa / Aesthetics / Wellness</option>
+          <option value="roofing">Roofing / Landscaping / Contracting</option>
+          <option value="realestate">Real Estate</option>
+          <option value="other">Other Local Business</option>
+        </select>
+      </div>
+
+      <!-- Step 2: Call volume -->
+      <div id="step-2" class="assessment-step hidden">
+        <h3 class="text-white font-semibold text-xl mb-2">How many calls do you receive per month?</h3>
+        <p class="text-slate-400 text-sm mb-6">Include all inbound calls to your main business number</p>
+        <div class="flex justify-between text-sm mb-2">
+          <span class="text-slate-500">20 calls</span>
+          <span id="q2-display" class="text-blue-400 font-semibold">200 calls/mo</span>
+          <span class="text-slate-500">1,000 calls</span>
+        </div>
+        <input type="range" id="q2" min="20" max="1000" value="200" step="10">
+      </div>
+
+      <!-- Step 3: Missed % -->
+      <div id="step-3" class="assessment-step hidden">
+        <h3 class="text-white font-semibold text-xl mb-2">What percentage of calls go unanswered?</h3>
+        <p class="text-slate-400 text-sm mb-6">Best estimate is fine — we'll measure the real number during discovery</p>
+        <div class="flex justify-between text-sm mb-2">
+          <span class="text-slate-500">5%</span>
+          <span id="q3-display" class="text-blue-400 font-semibold">25% missed</span>
+          <span class="text-slate-500">80%</span>
+        </div>
+        <input type="range" id="q3" min="5" max="80" value="25" step="1">
+      </div>
+
+      <!-- Step 4: Staff -->
+      <div id="step-4" class="assessment-step hidden">
+        <h3 class="text-white font-semibold text-xl mb-6">Do you have dedicated staff handling calls and bookings?</h3>
+        <div class="grid grid-cols-2 gap-4" data-choice-group>
+          <button class="assessment-choice gradient-border p-5 text-center text-white font-medium text-sm transition-all"
+                  data-value="yes" onclick="selectChoice(this, 'q4')">
+            <i data-lucide="users" class="w-6 h-6 mx-auto mb-2 text-blue-400"></i>
+            Yes — I have staff for this
+          </button>
+          <button class="assessment-choice gradient-border p-5 text-center text-white font-medium text-sm transition-all"
+                  data-value="no" onclick="selectChoice(this, 'q4')">
+            <i data-lucide="user-x" class="w-6 h-6 mx-auto mb-2 text-slate-400"></i>
+            No — it's handled ad hoc
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 5: Goals -->
+      <div id="step-5" class="assessment-step hidden">
+        <h3 class="text-white font-semibold text-xl mb-2">What's your primary goal with AI?</h3>
+        <p class="text-slate-400 text-sm mb-5">Select all that apply</p>
+        <div id="q5-options" class="space-y-3">
+          <label class="flex items-center gap-3 p-3 rounded-xl cursor-pointer transition-all hover:bg-blue-500/5" style="border:1px solid rgba(255,255,255,0.08);">
+            <input type="checkbox" value="missed-calls" class="w-4 h-4 rounded accent-blue-500">
+            <span class="text-slate-200 text-sm">Stop losing calls after hours &amp; on weekends</span>
+          </label>
+          <label class="flex items-center gap-3 p-3 rounded-xl cursor-pointer transition-all hover:bg-blue-500/5" style="border:1px solid rgba(255,255,255,0.08);">
+            <input type="checkbox" value="booking" class="w-4 h-4 rounded accent-blue-500">
+            <span class="text-slate-200 text-sm">Automate booking &amp; appointment scheduling</span>
+          </label>
+          <label class="flex items-center gap-3 p-3 rounded-xl cursor-pointer transition-all hover:bg-blue-500/5" style="border:1px solid rgba(255,255,255,0.08);">
+            <input type="checkbox" value="followup" class="w-4 h-4 rounded accent-blue-500">
+            <span class="text-slate-200 text-sm">Improve lead follow-up speed and consistency</span>
+          </label>
+          <label class="flex items-center gap-3 p-3 rounded-xl cursor-pointer transition-all hover:bg-blue-500/5" style="border:1px solid rgba(255,255,255,0.08);">
+            <input type="checkbox" value="staff-cost" class="w-4 h-4 rounded accent-blue-500">
+            <span class="text-slate-200 text-sm">Reduce front-office staffing costs</span>
+          </label>
+          <label class="flex items-center gap-3 p-3 rounded-xl cursor-pointer transition-all hover:bg-blue-500/5" style="border:1px solid rgba(255,255,255,0.08);">
+            <input type="checkbox" value="reviews" class="w-4 h-4 rounded accent-blue-500">
+            <span class="text-slate-200 text-sm">Grow Google reviews automatically</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Results screen -->
+      <div id="assessment-result" class="hidden text-center">
+
+        <!-- Score ring -->
+        <div class="relative w-40 h-40 mx-auto mb-6">
+          <svg class="w-full h-full -rotate-90" viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="54" fill="none" stroke="#1A2444" stroke-width="10"/>
+            <circle id="score-arc" cx="60" cy="60" r="54"
+                    fill="none" stroke="url(#score-grad)" stroke-width="10"
+                    stroke-linecap="round"
+                    stroke-dasharray="339" stroke-dashoffset="339"/>
+            <defs>
+              <linearGradient id="score-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%"   stop-color="#2563EB"/>
+                <stop offset="100%" stop-color="#06B6D4"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="absolute inset-0 flex flex-col items-center justify-center">
+            <span id="score-number" class="text-5xl font-black text-white">0</span>
+            <span class="text-slate-400 text-xs">/ 100</span>
+          </div>
+        </div>
+
+        <h3 class="text-white font-bold text-2xl mb-1">
+          Your AI Readiness Score: <span id="result-score-label">0</span>/100
+        </h3>
+        <p id="result-recommendation" class="text-slate-300 text-sm leading-relaxed mb-8 max-w-md mx-auto"></p>
+
+        <!-- Contact form -->
+        <div class="text-left space-y-3">
+          <input type="text" placeholder="Your name"
+                 class="w-full rounded-xl px-4 py-3 text-white placeholder-slate-500 outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                 style="background:#141B35;border:1px solid rgba(255,255,255,0.1);">
+          <input type="tel" placeholder="Best phone number"
+                 class="w-full rounded-xl px-4 py-3 text-white placeholder-slate-500 outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                 style="background:#141B35;border:1px solid rgba(255,255,255,0.1);">
+          <input type="email" placeholder="Email address"
+                 class="w-full rounded-xl px-4 py-3 text-white placeholder-slate-500 outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                 style="background:#141B35;border:1px solid rgba(255,255,255,0.1);">
+          <button class="btn-primary w-full text-base mt-2">
+            Book My Free Discovery Call →
+          </button>
+          <p class="text-slate-600 text-xs text-center pt-1">No credit card. No commitment. Just a real conversation.</p>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div id="assessment-nav" class="flex justify-between items-center mt-8">
+        <button id="prev-btn" onclick="prevStep()" class="btn-ghost invisible text-sm px-5 py-3">← Back</button>
+        <button id="next-btn" onclick="nextStep()" class="btn-primary text-sm px-6 py-3">Continue →</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================================================
+     FOOTER
+     ==================================================== -->
+<footer class="py-14 px-6 md:px-12" style="background:#070B14;border-top:1px solid rgba(255,255,255,0.05);">
+  <div class="max-w-7xl mx-auto">
+
+    <div class="grid md:grid-cols-4 gap-10 mb-10">
+
+      <!-- Brand -->
+      <div class="md:col-span-2">
+        <a href="#" class="flex items-center gap-2 mb-3 no-underline">
+          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+          </div>
+          <span class="text-lg font-bold text-white">Voice<span class="text-blue-400">Agent</span></span>
+        </a>
+        <p class="text-slate-400 text-sm max-w-xs leading-relaxed">
+          AI employees that answer, book, and follow up — so you can focus on delivering great service, not managing phones.
+        </p>
+        <!-- Social -->
+        <div class="flex gap-3 mt-5">
+          <a href="#" class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-500 hover:text-white transition-colors" style="background:#141B35;border:1px solid rgba(255,255,255,0.07);" aria-label="LinkedIn">
+            <i data-lucide="linkedin" class="w-4 h-4"></i>
+          </a>
+          <a href="#" class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-500 hover:text-white transition-colors" style="background:#141B35;border:1px solid rgba(255,255,255,0.07);" aria-label="Twitter">
+            <i data-lucide="twitter" class="w-4 h-4"></i>
+          </a>
+          <a href="#" class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-500 hover:text-white transition-colors" style="background:#141B35;border:1px solid rgba(255,255,255,0.07);" aria-label="YouTube">
+            <i data-lucide="youtube" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Links -->
+      <div>
+        <p class="text-white font-semibold text-sm mb-4">Company</p>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="#team"         class="text-slate-400 hover:text-white">AI Team</a></li>
+          <li><a href="#calculator"   class="text-slate-400 hover:text-white">ROI Calculator</a></li>
+          <li><a href="#case-studies" class="text-slate-400 hover:text-white">Results</a></li>
+          <li><a href="#discovery"    class="text-slate-400 hover:text-white">Our Process</a></li>
+          <li><a href="#"             class="text-slate-400 hover:text-white">Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- CTA -->
+      <div>
+        <p class="text-white font-semibold text-sm mb-4">Get Started</p>
+        <p class="text-slate-400 text-sm mb-5 leading-relaxed">Ready to stop losing revenue to missed calls?</p>
+        <a href="#assessment" class="btn-primary block text-center text-sm">Book a Free Demo</a>
+        <p class="text-slate-600 text-xs mt-3 text-center">No commitment required</p>
+      </div>
+
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-8" style="border-top:1px solid rgba(255,255,255,0.05);">
+      <p class="text-slate-600 text-xs">© 2025 VoiceAgent AI. All rights reserved.</p>
+      <div class="flex gap-6 text-xs">
+        <a href="#" class="text-slate-600 hover:text-slate-300">Privacy Policy</a>
+        <a href="#" class="text-slate-600 hover:text-slate-300">Terms of Service</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- Scroll-to-top button -->
+<button id="scroll-top-btn" aria-label="Scroll to top">
+  <i data-lucide="chevron-up" class="w-5 h-5"></i>
+</button>
+
+
+<!-- ====================================================
+     SCRIPTS
+     ==================================================== -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/calculator.js"></script>
+<script src="js/assessment.js"></script>
+
+</body>
+</html>
